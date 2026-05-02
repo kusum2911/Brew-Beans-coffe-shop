@@ -1,0 +1,206 @@
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <a href="#" class="logo">Brew & Bean</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#visit">Visit</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Brew & Bean</h1>
+            <p class="tagline">Small-batch roasts, clean design, and calm mornings—brewed daily.</p>
+        </div>
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView()">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- About / CraftedCoffee -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-image fade-in">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80" alt="Barista pouring latte art">
+            </div>
+            <div class="about-content fade-in">
+                <h3>Crafted Coffee</h3>
+                <p>From bean to cup, we keep it simple: ethical sourcing, precise roasting, and a space that feels like home. Every batch is roasted in small quantities to ensure peak flavor and freshness.</p>
+                <p>Our beans are sourced directly from farmers who share our commitment to quality and sustainability. We believe great coffee should be accessible, not exclusive.</p>
+            </div>
+        </div>
+
+        <div class="about-grid" style="direction: rtl;">
+            <div class="about-image fade-in" style="direction: ltr;">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80" alt="Coffee and croissant">
+            </div>
+            <div class="about-content fade-in" style="direction: ltr;">
+                <h3>Fresh Flavors Daily</h3>
+                <p>Seasonal drinks, house pastries, and a few surprises—made fresh every morning. Our pastry chef arrives before dawn to prepare croissants, muffins, and daily specials.</p>
+                <p>Whether you're grabbing a quick espresso or settling in for the afternoon, there's always something new to discover on our menu.</p>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature-card fade-in">
+                <div class="icon">☕</div>
+                <h4>Sip At Home</h4>
+                <p>Order ahead for pickup or delivery—your favorites, packed fresh and ready to go.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="icon">⭐</div>
+                <h4>Earn Rewards</h4>
+                <p>Join Brew & Bean perks—earn points, unlock free drinks, and get first access to new roasts.</p>
+            </div>
+            <div class="feature-card fade-in">
+                <div class="icon">🌿</div>
+                <h4>Ethical Sourcing</h4>
+                <p>Direct trade relationships with farmers ensuring fair wages and exceptional quality.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview -->
+    <section id="menu" class="menu-section">
+        <div class="section-inner">
+            <div class="section-header fade-in">
+                <h2>Our Menu</h2>
+                <p>Carefully curated coffees and house-made pastries</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=200&q=80" alt="Espresso">
+                    <div class="menu-item-info">
+                        <h4>Classic Espresso</h4>
+                        <span class="price">$3.50</span>
+                        <p>Rich, bold, and perfectly extracted</p>
+                    </div>
+                </div>
+                <div class="menu-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=200&q=80" alt="Latte">
+                    <div class="menu-item-info">
+                        <h4>House Latte</h4>
+                        <span class="price">$5.00</span>
+                        <p>Silky steamed milk with signature roast</p>
+                    </div>
+                </div>
+                <div class="menu-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&q=80" alt="Cold Brew">
+                    <div class="menu-item-info">
+                        <h4>Cold Brew</h4>
+                        <span class="price">$4.50</span>
+                        <p>Steeped 18 hours for smoothness</p>
+                    </div>
+                </div>
+                <div class="menu-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=200&q=80" alt="Pastry">
+                    <div class="menu-item-info">
+                        <h4>Butter Croissant</h4>
+                        <span class="price">$4.00</span>
+                        <p>Flaky, golden, baked fresh daily</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visit Section -->
+    <section id="visit" class="visit-section">
+        <div class="visit-image">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=800&q=80" alt="Minimalist café interior">
+        </div>
+        <div class="visit-content">
+            <h2>Visit The Café</h2>
+            <div class="visit-detail">
+                <h4>Location</h4>
+                <p>123 Roaster Lane, Portland</p>
+            </div>
+            <div class="visit-detail">
+                <h4>Weekdays</h4>
+                <p>Mon–Fri: 7am–6pm</p>
+            </div>
+            <div class="visit-detail">
+                <h4>Weekends</h4>
+                <p>Sat–Sun: 8am–7pm</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="section-header fade-in">
+            <h2>The Space</h2>
+            <p>A calm environment designed for focus and relaxation</p>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item fade-in">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=400&q=80" alt="Coffee cups">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?w=400&q=80" alt="Coffee beans">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=400&q=80" alt="Pour over">
+            </div>
+            <div class="gallery-item fade-in">
+                <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=400&q=80" alt="Café seating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial">
+        <div class="testimonial-inner fade-in">
+            <blockquote>
+                "The calmest café in the city. Great coffee, no rush, and the loyalty perks actually matter."
+            </blockquote>
+            <cite>— Maya T., regular</cite>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-logo">Brew & Bean</div>
+            <p class="footer-tagline">Small-batch roasts, clean design, and calm mornings.</p>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#visit">Visit</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+            <p class="copyright">© 2026 Brew & Bean Coffee Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>'''
+
+with open('/mnt/agents/output/brew-and-bean/index.html', 'w', encoding='utf-8') as f:
+    f.write(html_content)
+
+print("✅ index.html saved")
+print("\n📁 Files created in /mnt/agents/output/brew-and-bean/:")
+print("   ├── index.html")
+print("   ├── style.css")
+print("   └── main.js")
