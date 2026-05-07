@@ -1,6 +1,4 @@
-# Brew-Beans-coffe-shop
-
-brew-and-bean/
+#coffe-shop
 
 ├── index.html    (structure & content)
 
